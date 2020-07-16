@@ -1,0 +1,953 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &470940823
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 470940824}
+  m_Layer: 0
+  m_Name: World Building
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &470940824
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 470940823}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1452050876}
+  m_Father: {fileID: 7050456265432756652}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &584378724
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 584378725}
+  m_Layer: 0
+  m_Name: Camera
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &584378725
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 584378724}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2115525905}
+  m_Father: {fileID: 7050456265432756652}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1452050875
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1452050876}
+  - component: {fileID: 1452050877}
+  m_Layer: 0
+  m_Name: Discover - Sprite Shape
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1452050876
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1452050875}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 470940824}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1452050877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1452050875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a952ff0a6afde7c4b95d55801086887e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Sprite Shape
+  Category: World Building
+  DefaultSelected: 0
+  AlignViewToTransform: 0
+  ObjectsToToggle: []
+  Description: "You can create organic 2D environments with Sprite Shape.\r\n\r\nWith
+    the 2D Sprite Shape package installed; a path-based tool is available where you
+    can set a series of points and curves for a series of sprites to align to and
+    follow.\r\n\r\nThe Sprite Shape Asset allows extra settings and control over
+    how the Sprite Shape behave; such as filtering certain sprite visuals to render
+    when the path is set to have a specific angle or orientation\r."
+  Priority: 0
+  Sections:
+  - SectionName: Grass Sprite Shape
+    SectionContent: "The forest environment uses Sprite Shape for several layers
+      of grass and flowers.\r\n\r\nOne of these Sprite Shape layers uses a Polygon
+      Collider; which samples the path data from the Sprite Shape and automatically
+      generates a floor for Sara to walk on-top of.\r"
+    Actions:
+    - Description: Grass Sprite
+      Target: {fileID: 2800000, guid: a9b14dc86533cd546a669b3b00c99f7e, type: 3}
+    - Description: Grass Sprite Shape Asset
+      Target: {fileID: 11400000, guid: 2f32721ffe3cd3840a00fe3a3b88c564, type: 2}
+    - Description: Grass Sprite Shape In-Scene
+      Target: {fileID: 0}
+  - SectionName: Tree Attachment
+    SectionContent: "Several of the trees in the background are attached to positions
+      along the Sprite Shape path. As the Sprite Shape adapts to a different position
+      and shape, the trees automatically move to match it.\r\n\r\nThis is done with
+      a 'Node Attach' script on the Tree GameObject which samples a particular path
+      point on a Sprite Shape to be based from.\r"
+    Actions:
+    - Description: Node Attach Script
+      Target: {fileID: 11500000, guid: a0f4c3c7f77e5ea418d22ad79a18baea, type: 3}
+    - Description: Background Tree
+      Target: {fileID: 0}
+    - Description: Grass Sprite Shape In-Scene
+      Target: {fileID: 0}
+--- !u!1 &2115525904
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2115525905}
+  - component: {fileID: 2115525906}
+  m_Layer: 0
+  m_Name: Discover - Cinemachine
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2115525905
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2115525904}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 584378725}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2115525906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2115525904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a952ff0a6afde7c4b95d55801086887e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: 2D Cinemachine
+  Category: Camera
+  DefaultSelected: 0
+  AlignViewToTransform: 0
+  ObjectsToToggle: []
+  Description: "Unity's procedural camera system, called 'Cinemachine', can be implemented
+    in 2D projects.\r\nIn the Cinemachine menu, click on the 'Create 2D Camera' option.
+    This will setup a ready-made Virtual Camera for tracking 2D objects orthographically.\r"
+  Priority: 0
+  Sections:
+  - SectionName: Camera Setup
+    SectionContent: "In <i>Lost Crypt</i>, a set of 2D Virtual Cameras tracks Sara
+      as she moves through the environment.\r\n\nThe gameplay begins with a wide
+      'Far' shot, before automatically blending into a 'Near' shot.\r\nFor the cutscene
+      in the crypt, the Camera transitions back to the 'Far' shot using Cinemachine's
+      Timeline Track.\r"
+    Actions:
+    - Description: Main Camera
+      Target: {fileID: 0}
+    - Description: Virtual Camera - Far
+      Target: {fileID: 0}
+    - Description: Virtual Camera - Near
+      Target: {fileID: 0}
+--- !u!1 &4088430086352410738
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7192768697573718639}
+  - component: {fileID: 5922161662304514328}
+  m_Layer: 0
+  m_Name: Discover - Sprite Rigging & IK
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7192768697573718639
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4088430086352410738}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -53.834446, y: -1.0252736, z: -135.99023}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5657900266856884529}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5922161662304514328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4088430086352410738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a952ff0a6afde7c4b95d55801086887e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Sprite Rigging & IK
+  Category: Animation
+  DefaultSelected: 0
+  AlignViewToTransform: 1
+  ObjectsToToggle: []
+  Description: 2D Tools now offer a workflow for rigging and animating imported sprites.
+  Priority: 0
+  Sections:
+  - SectionName: Sprite Rig
+    SectionContent: "The main character of <i>Lost Crypt</i>, named 'Sara', was created
+      in Photoshop and imported as a PSB file.\n\nUsing the 2D PSD Importer package,
+      extra meta-data can be read from the PSB file such as Layer Grouping, Hierarchy
+      and Layer Names.\r\n\r\nWith the 2D Animation Package installed, the Sprite
+      Editor can be used to rig Sprites; with tools to set up bone structures, geometry
+      for deformation and also bone influence weights.\r\n\r\nSara uses Prefab Variants
+      to set up extra gameplay mechanics such as Physics and Input & Movement Scripts.\r"
+    Actions:
+    - Description: Sara PSB
+      Target: {fileID: 2386191339426107265, guid: a4396c221e9480b4083ef5e0bdbcb03e,
+        type: 3}
+    - Description: Sara Prefab Variant
+      Target: {fileID: 2638879086307866348, guid: 8536eef0a5c281642b45c61fc2f8e7e6,
+        type: 3}
+    - Description: Sara In-Scene
+      Target: {fileID: 0}
+  - SectionName: IK
+    SectionContent: "When a Sprite Rig has been set up; IK solvers can be added to
+      control multiple bones together. These are typically used for chain-like bones
+      such as character limbs.\r\n\r\nThe IK System is available for use after installing
+      the 2D IK package.\r\n\r\nSara's Rig uses IK for consistent control of her
+      legs and feet.\r"
+    Actions:
+    - Description: Sara Right Leg IK Target
+      Target: {fileID: 0}
+    - Description: Sara Right Foot IK Target
+      Target: {fileID: 0}
+  - SectionName: Animation
+    SectionContent: "Sara was animated inside Unity; using the Animator and Animation
+      windows.\r\n\r\nYou can preview the Animations using the Animation Window.\r"
+    Actions:
+    - Description: Sara Animation Controller
+      Target: {fileID: 9100000, guid: 26a56aac1e77f814c8a7bc7f26ff5a81, type: 2}
+    - Description: Sara Run Animation
+      Target: {fileID: 7400000, guid: 1dcb1a820ec070749bdbba82738d0b7d, type: 2}
+    - Description: Sara In-Scene
+      Target: {fileID: 0}
+  - SectionName: Sara's Hair
+    SectionContent: "Her hair was set up using the Sprite Rigging workflow. Instead
+      of being animated, it moves using 2D physics.\r\n\r\nEach bone has a 2D Rigidbody
+      component and a 2D Hinge Joint connecting it to the next bone in the chain.\r"
+    Actions:
+    - Description: Sara's Hair Sprite
+      Target: {fileID: 2800000, guid: c2d4edddd25a72e4fb5a28ad90cca476, type: 3}
+    - Description: Sara's Hair Physics Setup
+      Target: {fileID: 0}
+--- !u!1 &4721084514567121918
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5657900266856884529}
+  m_Layer: 0
+  m_Name: Animation
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5657900266856884529
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4721084514567121918}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 7192768697573718639}
+  m_Father: {fileID: 7050456265432756652}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7050456264333704441
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7050456264333704198}
+  m_Layer: 0
+  m_Name: Rendering
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7050456264333704198
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7050456264333704441}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 7050456264600690064}
+  - {fileID: 7050456265359123356}
+  - {fileID: 7050456265048152862}
+  - {fileID: 7050456265985499759}
+  - {fileID: 7050456264422387821}
+  - {fileID: 7050456265079708339}
+  m_Father: {fileID: 7050456265432756652}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7050456264422387820
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7050456264422387821}
+  - component: {fileID: 7050456264422387818}
+  m_Layer: 0
+  m_Name: Discover - Particles
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7050456264422387821
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7050456264422387820}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -37.725918, y: 1.1161386, z: -95.99054}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7050456264333704198}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7050456264422387818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7050456264422387820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a952ff0a6afde7c4b95d55801086887e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Particles
+  Category: Rendering
+  DefaultSelected: 0
+  AlignViewToTransform: 1
+  ObjectsToToggle: []
+  Description: The <i>Lost Crypt</i> contains several Particle Systems for various
+    ambient effects.
+  Priority: 4
+  Sections:
+  - SectionName: Shader Graphs
+    SectionContent: 'Two general purpose Shader Graphs were created for rendering
+      all of the particles in the project, using the Sprite Master Nodes.
+
+
+
+      Both
+      of the Graphs use the Vertex Color Node to apply generated Color Data (that
+      has been set in the Particle System) to the shader''s final visual.'
+    Actions:
+    - Description: Particles Lit Shader Graph
+      Target: {fileID: -6465566751694194690, guid: 032a29e50acf417428a770979950c440,
+        type: 3}
+    - Description: Particles Unlit Shader Graph
+      Target: {fileID: -6465566751694194690, guid: 8bf17d58e716b4f44ab008cf368d5e54,
+        type: 3}
+  - SectionName: Environment Particles
+    SectionContent: "Several looping persistent particle systems are placed throughout
+      the environment.\r\nThese are set to render among the environment on specific
+      Sorting Layers and also are affected by 2D Lights.\r"
+    Actions:
+    - Description: Forest Glow
+      Target: {fileID: 0}
+    - Description: Crypt Entrance Dust
+      Target: {fileID: 0}
+    - Description: Crypt Flames
+      Target: {fileID: 0}
+  - SectionName: Sequence Particles
+    SectionContent: "When the Timeline Sequence is triggered by the main character
+      reaching the Wand, the Artefact explodes into small embers.\r\nThe Ember Particles
+      were sequenced with Timeline's Control Track and use a fixed particle seed
+      for consistency.\r"
+    Actions:
+    - Description: Artefact Explosion Timeline
+      Target: {fileID: 0}
+    - Description: Artefact Explosion Embers
+      Target: {fileID: 0}
+--- !u!1 &7050456264600690067
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7050456264600690064}
+  - component: {fileID: 7050456264600690065}
+  m_Layer: 0
+  m_Name: Discover - Universal RP 2D Renderer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7050456264600690064
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7050456264600690067}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -5.3749027, y: 1.2292349, z: -223.10156}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7050456264333704198}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7050456264600690065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7050456264600690067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a952ff0a6afde7c4b95d55801086887e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Universal RP 2D Renderer
+  Category: Rendering
+  DefaultSelected: 0
+  AlignViewToTransform: 0
+  ObjectsToToggle: []
+  Description: 'The <i>Lost Crypt</i> uses the 2D Renderer, which is a part of the
+    Universal Render Pipeline. It''s included when you install the Universal RP Package
+    from the Package Manager.
+
+
+    With the Universal RP installed, you can create
+    a 2D Renderer Asset through the ''Create Asset Menu'' and then assign it to the
+    Universal Render Pipeline Asset''s Renderer List.'
+  Priority: 0
+  Sections:
+  - SectionName: Render Pipeline Assets
+    SectionContent: 
+    Actions:
+    - Description: Universal Render Pipeline Asset
+      Target: {fileID: 11400000, guid: 0a9eb8cdeae5e3241b8e49c077e7f863, type: 2}
+    - Description: 2D Renderer Asset
+      Target: {fileID: 11400000, guid: 778fa29fc3929f24184f727aebf9b5e4, type: 2}
+--- !u!1 &7050456265048152849
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7050456265048152862}
+  - component: {fileID: 7050456265048152863}
+  m_Layer: 0
+  m_Name: Discover - 2D Light Blend Styles
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7050456265048152862
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7050456265048152849}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -48.453094, y: 11.04555, z: -256.1504}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7050456264333704198}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7050456265048152863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7050456265048152849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a952ff0a6afde7c4b95d55801086887e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: 2D Light Blend Styles
+  Category: Rendering
+  DefaultSelected: 0
+  AlignViewToTransform: 1
+  ObjectsToToggle: []
+  Description: 'The 2D Renderer also has a Light Blend system, allowing additional
+    Light blending styles to be applied to Lit Sprites.
+
+
+
+    These are filtered
+    using Mask Map. You can set it up for each of the color channels (RGBA).
+
+    Currently,
+    there is a maximum of 4 Light Blend Styles per 2D Renderer Asset.
+
+
+
+    Each
+    2D Light has a setting that determines which Light Blend Style it targets.
+
+
+
+    A
+    Mask Map can be applied to a Sprite in several ways:
+
+    - The Sprite Editor''s
+    Secondary Textures menu
+
+    - Any Material using a ''Sprite Lit Default'' shader
+
+    -
+    Any Shader Graph with a ''Sprite Lit Master Node'' output'
+  Priority: 2
+  Sections:
+  - SectionName: Settings
+    SectionContent: These settings can be setup through the 2D Renderer Asset and
+      are global across the whole project.
+    Actions:
+    - Description: 2D Renderer Asset
+      Target: {fileID: 11400000, guid: 778fa29fc3929f24184f727aebf9b5e4, type: 2}
+  - SectionName: Mask Layer
+    SectionContent: 'In <i>Lost Crypt</i>, we set up a Light Blend Style for all
+      Mask Map''s Red Channels to be used for Direct Lighting.
+
+      This can be
+      seen on the edges of the Tree Foliage and the Crypt''s Ruins.
+
+'
+    Actions:
+    - Description: Foliage Mask Sprite
+      Target: {fileID: 2800000, guid: bc96207a8db67284e86f48ef11024518, type: 3}
+    - Description: Foliage Direct Lighting
+      Target: {fileID: 0}
+    - Description: Ruins Mask Sprite
+      Target: {fileID: 2800000, guid: 534a3e83e788b1d4d8d2a42d06ef430c, type: 3}
+    - Description: Ruins Direct Lighting
+      Target: {fileID: 0}
+--- !u!1 &7050456265079708338
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7050456265079708339}
+  - component: {fileID: 7050456265079708336}
+  m_Layer: 0
+  m_Name: Discover - Post Processing
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7050456265079708339
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7050456265079708338}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 17.31037, y: -1.7138724, z: -115.990234}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7050456264333704198}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7050456265079708336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7050456265079708338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a952ff0a6afde7c4b95d55801086887e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Post Processing
+  Category: Rendering
+  DefaultSelected: 0
+  AlignViewToTransform: 1
+  ObjectsToToggle: []
+  Description: 'Universal Render Pipeline''s Post Processing is compatible with the
+    2D Renderer.
+
+
+    Post Processing settings are stored on a Volume Profile Asset
+    which is then used in a scene with a Volume Component.'
+  Priority: 5
+  Sections:
+  - SectionName: Post Process Settings
+    SectionContent: "In <i>Lost Crypt</i>'s level, a single Volume Profile is used
+      globally to affect everything rendered by the Main Camera. \r\n\r\nSeveral
+      of the Sprite Shader Graphs make use of HDR Intensity for extra influence with
+      Bloom.\r"
+    Actions:
+    - Description: Volume Component
+      Target: {fileID: 0}
+    - Description: Volume Profile Asset
+      Target: {fileID: 11400000, guid: b035f4de09efec44faec368f294a8fca, type: 2}
+    - Description: Universal Render Pipeline Asset
+      Target: {fileID: 11400000, guid: 0a9eb8cdeae5e3241b8e49c077e7f863, type: 2}
+--- !u!1 &7050456265359123359
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7050456265359123356}
+  - component: {fileID: 7050456265359123357}
+  m_Layer: 0
+  m_Name: Discover - 2D Lighting
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7050456265359123356
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7050456265359123359}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -6.5299454, y: -0.31857437, z: -276.1504}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7050456264333704198}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7050456265359123357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7050456265359123359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a952ff0a6afde7c4b95d55801086887e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: 2D Lighting
+  Category: Rendering
+  DefaultSelected: 0
+  AlignViewToTransform: 1
+  ObjectsToToggle: []
+  Description: 'The 2D Renderer has an integrated 2D Lighting System.
+
+
+
+    You
+    can add 2D Lights to your scene through the ''Create GameObject Menu''.
+
+
+
+    The
+    2D Light Component has several options such as light color, range, intensity,
+    light mask and target sorting layers.
+
+
+
+    Only specific 2D Shaders are supported
+    by 2D Lights:
+
+    - Universal RP''s ''Sprite Lit Default'' shader
+
+    - Shader
+    Graph''s ''Sprite Lit Master Node'''
+  Priority: 1
+  Sections:
+  - SectionName: Global Light 2D
+    SectionContent: The Lost Crypt uses a single Global Light for blue-tone ambience
+      for the outdoor environment.
+    Actions:
+    - Description: Outdoor Ambient Lighting
+      Target: {fileID: 0}
+  - SectionName: Point Light 2D
+    SectionContent: Several cone-shaped Point Lights are positioned above the trees
+      to simulate sun-light from above.
+    Actions:
+    - Description: Sun Point Light
+      Target: {fileID: 0}
+  - SectionName: Freeform Light 2D
+    SectionContent: This type of light was used to sculpt areas of light influence
+      based on the environment's layout.
+    Actions:
+    - Description: Crypt Light Shaft
+      Target: {fileID: 0}
+    - Description: Crypt Entrance Light Area
+      Target: {fileID: 0}
+    - Description: Crypt Roof Light Area
+      Target: {fileID: 0}
+  - SectionName: Sprite Light 2D
+    SectionContent: 'Imported Sprite Assets can also be used as visuals for 2D Lights.
+
+
+      The
+      Lost Crypt uses Sprite Lights for more refined and specific details throughout
+      the environment.'
+    Actions:
+    - Description: Tree Trunk Sun Spots
+      Target: {fileID: 0}
+    - Description: Forest Light Shaft
+      Target: {fileID: 0}
+    - Description: Stone Sun Spots
+      Target: {fileID: 0}
+  - SectionName: Day to Night Control
+    SectionContent: To blend between Day and Night light setups; a global controller
+      script was created to set color-blend values on multiple 2D Lights.
+    Actions:
+    - Description: Light Color Controller
+      Target: {fileID: 0}
+--- !u!1 &7050456265432756655
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7050456265432756652}
+  m_Layer: 0
+  m_Name: Discover
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7050456265432756652
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7050456265432756655}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 7050456264333704198}
+  - {fileID: 5657900266856884529}
+  - {fileID: 470940824}
+  - {fileID: 584378725}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7050456265985499758
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7050456265985499759}
+  - component: {fileID: 7050456265985499756}
+  m_Layer: 0
+  m_Name: Discover - 2D Shader Graph
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7050456265985499759
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7050456265985499758}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -30.944172, y: 1.9323667, z: -347.23633}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7050456264333704198}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7050456265985499756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7050456265985499758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a952ff0a6afde7c4b95d55801086887e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: 2D Shader Graph
+  Category: Rendering
+  DefaultSelected: 0
+  AlignViewToTransform: 1
+  ObjectsToToggle: []
+  Description: "You can now use Shader Graph to generate custom shaders compatible
+    with the 2D Renderer.\r\n\r\nUse the 'Sprite Lit' and 'Sprite Unlit' Master Nodes
+    to create Shader Graphs that work with the Sprite Renderer, Tilemap Renderer
+    and Sprite Shape Renderer.\r"
+  Priority: 3
+  Sections:
+  - SectionName: Wind for Vegetation
+    SectionContent: "In this project, we created the swaying Wind effect for the
+      Tree Foliage, Trunks, Branches and also the foreground Grass with Shader Graph.\r\n\r\nWorld-space
+      noise was used to offset the vertices of the sprites and sway them horizontally.\r\nShader
+      Graph Properties have been exposed to the Material Inspector to control settings
+      such as Wind Speed, Wind Strength and even Wind Direction.\r"
+    Actions:
+    - Description: Vegetation Wind Shader Graph
+      Target: {fileID: -6465566751694194690, guid: 408da5ee58f729347a6e0edbd03bee89,
+        type: 3}
+    - Description: Tree Foliage Sprite Renderer
+      Target: {fileID: 0}
+    - Description: Tree Trunk Sprite Renderer
+      Target: {fileID: 0}
+    - Description: Foreground Grass Sprite Shape Renderer
+      Target: {fileID: 0}
+  - SectionName: Water
+    SectionContent: "The water in the Crypt uses Shader Graph for several effects:\r\n-
+      To create procedural caustics & ripples\r\n- To create edge gradients for where
+      the water meets the wall edge\r\n- To sample the Mirror Camera's Render Texture
+      and then refract it before combining it with the water visuals\r"
+    Actions:
+    - Description: Water Shader Graph
+      Target: {fileID: -6465566751694194690, guid: e996c1cdac5d8f6449a8619c351dc439,
+        type: 3}
+    - Description: Water Sprite Renderer
+      Target: {fileID: 0}
+  - SectionName: Spirits
+    SectionContent: "When the level changes from Day to Night, Spirits appear in
+      the forest. By using the 'Day To Night Control' Time Slider, you can set the
+      current time of day, outside of Play Mode, to preview and test different lighting
+      conditions and cause the Spirits to appear.\r\n\r\nWe created the Spirit's
+      visuals with several different techniques in Shader Graph:\r\n- The Spirit's
+      are set up with a sprite that has different details in each color channel (RGB).
+      These channels are sampled in Shader Graph and used for setting color and effects
+      to different parts of the spirit.\r\n- The Spirits also move and 'wobble' using
+      Vertex Offset. The technique we used is similar to the Wind for the Vegetation.\r\n-
+      The Spirit's details are influenced by the Wand. The wand's position is set
+      to a property on the Spirit Shader Graph and a Distance node is used to calculate
+      how far it is from the Spirit's vertices. \r"
+    Actions:
+    - Description: Day to Night Control
+      Target: {fileID: 0}
+    - Description: Spirit Shader Graph
+      Target: {fileID: -6465566751694194690, guid: 98337e8f3519afb47bece3b0fd693d8e,
+        type: 3}
+    - Description: Spirit Detail Sprite
+      Target: {fileID: 2800000, guid: 164259881bccd42498459b5cf5ab820b, type: 3}
+    - Description: Spirit Sprite Renderer
+      Target: {fileID: 0}
+    - Description: Wand Game Object
+      Target: {fileID: 0}

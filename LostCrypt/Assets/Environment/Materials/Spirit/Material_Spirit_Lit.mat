@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Material_Spirit_Lit
+  m_Shader: {fileID: -6465566751694194690, guid: 98337e8f3519afb47bece3b0fd693d8e,
+    type: 3}
+  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 15828aaaddbbe154b99f258d5d927b1e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - Vector1_356DE96F: 1.07
+    - Vector1_39218ACB: -0.23
+    - Vector1_9E353598: 1.92
+    - Vector1_C703B39: 1
+    - Vector1_C703B391: 1
+    - Vector1_D412CFB2: 0.55
+    m_Colors:
+    - ColorBloom: {r: 1, g: 1, b: 1, a: 0}
+    - Color_5B866001: {r: 4, g: 4, b: 4, a: 0}
+    - Color_926009DC: {r: 0.9811321, g: 0, b: 0, a: 1}
+    - _SourcePosition: {r: 23.072, g: -5.031, b: 0, a: 0}

@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fec17e6c1232c495da4cd9be9d68104d, type: 3}
+  m_Name: RecordedInputs
+  m_EditorClassIdentifier: 
+  recordedInputs:
+  - type: 2
+    frame: 6
+  - type: 4
+    frame: 167
+  - type: 5
+    frame: 185
+  - type: 4
+    frame: 259
+  - type: 5
+    frame: 278
+  - type: 3
+    frame: 528
+  - type: 2
+    frame: 655
+  - type: 3
+    frame: 794
+  - type: 0
+    frame: 1151
+  - type: 1
+    frame: 1231
+  - type: 0
+    frame: 1293
+  - type: 1
+    frame: 1408
+  - type: 4
+    frame: 1435
+  - type: 0
+    frame: 1441
+  - type: 5
+    frame: 1445
+  - type: 1
+    frame: 1454
+  - type: 4
+    frame: 1482
+  - type: 0
+    frame: 1491
+  - type: 5
+    frame: 1493
+  - type: 1
+    frame: 1510
+  - type: 0
+    frame: 1533
+  - type: 1
+    frame: 1754
+  - type: 0
+    frame: 1824
+  - type: 1
+    frame: 1855
+  - type: 0
+    frame: 1931
+  - type: 1
+    frame: 1972
+  - type: 0
+    frame: 2014
+  - type: 1
+    frame: 2088
+  - type: 0
+    frame: 2142
+  - type: 1
+    frame: 2208
+  - type: 2
+    frame: 2266
+  - type: 3
+    frame: 2281

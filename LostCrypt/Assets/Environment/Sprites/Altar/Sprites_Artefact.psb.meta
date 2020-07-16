@@ -1,0 +1,447 @@
+fileFormatVersion: 2
+guid: a181e65e135bb744ea1ac3290684e2cb
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: b2a9591990af98743ba3ff7cf1000886, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 1
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    isReadable: 0
+    streamingMipmaps: 1
+    streamingMipmapsPriority: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 500
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+  spriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+  mosaicSpriteImportData: []
+  rigSpriteImportData:
+  - name: glowStone
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 565
+      width: 141
+      height: 170
+    spriteID: 265dc1b0e74252840a4fe87d81bdfd6f
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -160, y: 377}
+  - name: glow
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 420
+      height: 416
+    spriteID: d92f81d833e785c49a8b97153b3d808e
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -27, y: -28}
+  - name: stone_a
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 419
+      y: 428
+      width: 47
+      height: 77
+    spriteID: e27e722f6cbd61b418b29294b1771f03
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 218, y: 63}
+  - name: stone_b
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 153
+      y: 964
+      width: 55
+      height: 54
+    spriteID: 1f9e8e970c7bdb748ac63a863a7b1b5d
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -201, y: 593}
+  - name: stone_c
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 419
+      y: 513
+      width: 74
+      height: 37
+    spriteID: 43058807d70238a4eb09c18a22df8cdb
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 65, y: 438}
+  - name: stone_d
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 216
+      y: 964
+      width: 57
+      height: 25
+    spriteID: 54e43139e053c6a4e983ce103c225e06
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 81, y: 906}
+  - name: stone_e
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 153
+      y: 864
+      width: 144
+      height: 92
+    spriteID: 3fadf972e20e7a84391bc76eabc9f563
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -40, y: 814}
+  - name: stone_f
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 237
+      y: 428
+      width: 174
+      height: 108
+    spriteID: 5272c6c281acc764685ca37b5ff43f85
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 181, y: 330}
+  - name: stone_g
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 428
+      width: 225
+      height: 129
+    spriteID: 2e22410e8e912044aa702a8272437752
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -240, y: 319}
+  - name: stone_h
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 153
+      y: 714
+      width: 155
+      height: 142
+    spriteID: 10ed13d62932c3d48b39f5aa80ba742f
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 57, y: 552}
+  - name: stone_i
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 153
+      y: 565
+      width: 165
+      height: 141
+    spriteID: 14af3be83ef373040920ab95097e3dd1
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -106, y: 377}
+  platformSettings:
+  - name: Default
+    overridden: 1
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  mosaicLayers: 1
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 7
+  importHiddenLayers: 0
+  importedTextureWidth: 256
+  importedTextureHeight: 512
+  documentSize: {x: 512, y: 512}
+  paperDollMode: 0
+  keepDupilcateSpriteName: 0
+  spriteCategoryList:
+    categories: []
+  textureActualWidth: 512
+  textureActualHeight: 1024
+  spritePackingTag: 
+  resliceFromLayer: 0
+  characterMode: 1
+  mosaicPSDLayers: []
+  rigPSDLayers:
+  - name: glowStone
+    spriteName: glowStone
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 265dc1b0e74252840a4fe87d81bdfd6f
+    layerID: 22
+    mosaicPosition: {x: 4, y: 565}
+  - name: glow
+    spriteName: glow
+    isGroup: 0
+    parentIndex: -1
+    spriteID: d92f81d833e785c49a8b97153b3d808e
+    layerID: 21
+    mosaicPosition: {x: 4, y: 4}
+  - name: stone_a
+    spriteName: stone_a
+    isGroup: 0
+    parentIndex: -1
+    spriteID: e27e722f6cbd61b418b29294b1771f03
+    layerID: 19
+    mosaicPosition: {x: 419, y: 428}
+  - name: stone_b
+    spriteName: stone_b
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 1f9e8e970c7bdb748ac63a863a7b1b5d
+    layerID: 17
+    mosaicPosition: {x: 153, y: 964}
+  - name: stone_c
+    spriteName: stone_c
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 43058807d70238a4eb09c18a22df8cdb
+    layerID: 15
+    mosaicPosition: {x: 419, y: 513}
+  - name: stone_d
+    spriteName: stone_d
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 54e43139e053c6a4e983ce103c225e06
+    layerID: 13
+    mosaicPosition: {x: 216, y: 964}
+  - name: stone_e
+    spriteName: stone_e
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 3fadf972e20e7a84391bc76eabc9f563
+    layerID: 11
+    mosaicPosition: {x: 153, y: 864}
+  - name: stone_f
+    spriteName: stone_f
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 5272c6c281acc764685ca37b5ff43f85
+    layerID: 9
+    mosaicPosition: {x: 237, y: 428}
+  - name: stone_g
+    spriteName: stone_g
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 2e22410e8e912044aa702a8272437752
+    layerID: 7
+    mosaicPosition: {x: 4, y: 428}
+  - name: stone_h
+    spriteName: stone_h
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 10ed13d62932c3d48b39f5aa80ba742f
+    layerID: 5
+    mosaicPosition: {x: 153, y: 714}
+  - name: stone_i
+    spriteName: stone_i
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 14af3be83ef373040920ab95097e3dd1
+    layerID: 3
+    mosaicPosition: {x: 153, y: 565}
+  characterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+  generateGOHierarchy: 0
+  textureAssetName: artefact Texture
+  prefabAssetName: artefact Prefab
+  spriteLibAssetName: artefact Sprite Lib
+  secondarySpriteTextures: []

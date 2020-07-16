@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99c49654b9bada340bfd165d70dc8296, type: 3}
+  m_Name: DiscoverLostCrypt
+  m_EditorClassIdentifier: 
+  WindowTitle: The Lost Crypt
+  HeaderTexture: {fileID: 2800000, guid: 30286e5bb4ca47845b05cc8691e3684e, type: 3}
+  WindowWidth: 640
+  WindowHeight: 640
+  DiscoverListWidth: 180
+  EnableShowAtStartup: 1
+  PreferenceName: Discover
+  Title: About the Project
+  Description: "The <i>Lost Crypt</i> is a 2D sample project that shows all of Unity's
+    2D tools working together. It\u2019s made with Unity 2019.3 and uses the Universal
+    Render Pipeline (URP). \r\n\nFollow this Discover Window to learn more about
+    the 2D tools that were used in the production of the project. The Package Manager
+    also includes links to documentation for each of the 2D packages that are installed.\n"
+  Scenes:
+  - Title: Scenes
+    Description: The <i>Lost Crypt</i> contains all gameplay, environment and effects
+      in one 'Main' scene.
+    SceneSetups: []
+    SingleScenes:
+    - {fileID: 102900000, guid: a2b58d8c2e473104380da39b8eb2a7e5, type: 3}
+  Debug: 0

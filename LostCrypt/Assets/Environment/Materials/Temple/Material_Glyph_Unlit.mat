@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Material_Glyph_Unlit
+  m_Shader: {fileID: -6465566751694194690, guid: d2d707038142792488d3f5e9af2b25fd,
+    type: 3}
+  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_127C7BB1:
+        m_Texture: {fileID: 2800000, guid: 5bbb385aa4813c04d8de5ac1b13bfbb6, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_79B2ACF0:
+        m_Texture: {fileID: 2800000, guid: ddcf243a163107c40a9eab89cc9c881c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - Vector1_528915F0: 1
+    - Vector1_A4D2DEC8: 0.1
+    - Vector1_CAECA7A5: 1
+    - Vector1_D19711D6: 1.64
+    m_Colors:
+    - Color_8B11495: {r: 0.07132784, g: 1.1353015, b: 1.1353015, a: 0.92156863}
